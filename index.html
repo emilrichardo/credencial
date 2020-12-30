@@ -10,7 +10,12 @@
 
 <style>
     html, body{
-        font-size: 9px;
+        font-size: 10px;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+        color-adjust: exact !important;                 /*Firefox*/
     }
 
     .credencial-container{
@@ -19,8 +24,8 @@
     .credencial{        
        /*  width: 1050px;
         height: 600px; */
-        width: 250px;
-        height: 155px;
+        width: 288px;
+        height: 186px;
         background: url("assets/images/background.svg") no-repeat 100%;
         background-position: top right;
         padding: 1rem 1rem;
