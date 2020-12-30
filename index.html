@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credencial</title>
+</head>
+
+<style>
+    html, body{
+        font-size: 9px;
+    }
+
+    .credencial-container{
+        display: flex;
+    }
+    .credencial{        
+       /*  width: 1050px;
+        height: 600px; */
+        width: 250px;
+        height: 155px;
+        background: url("assets/images/background.svg") no-repeat 100%;
+        background-position: top right;
+        padding: 1rem .8rem;
+        
+        box-sizing: border-box;
+        font-family: public sans;
+        position: relative;
+        border: dashed 1px rgb(175, 175, 175);        
+    }
+
+    .frente{
+        padding-top: 1.5rem;
+    }
+
+
+    .d-flex{
+        display: flex;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .text-danger{
+        color: #E7343F;
+    }
+
+    .profile-image{
+        width: 33%;
+    }
+    .profile-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .list-datos{
+        padding-left:1rem ;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .list-datos li{
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+
+    .list-datos small{
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+    .list-datos li h5{
+        margin: 0;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .vto{
+        margin-left: 3rem;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        padding-top: .3rem;
+    }
+
+    .logo-dgt{
+        max-width: 55%;
+    }
+
+    .logo-gob{
+        max-width: 30%;
+    }
+
+    .numero-carnet{
+        position: absolute;
+        transform: rotate(270deg);
+        top: 2.3rem;
+        right: -2rem;
+    }
+
+    .dorso{
+        padding-top: .5rem;
+       
+    }
+    .header{
+        background-color: #244A9A;
+        color: #fff;
+        text-align: center;
+        padding:.5rem;
+        border-radius: 4px;
+
+    }
+
+    .header h2{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .col{
+        width: 60%;
+        display: inline-block;
+    }
+    .col-b{
+        width: 35%;
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .dorso h6{
+        text-transform: uppercase;
+        margin-bottom: 0;;
+    }
+    .dorso h4{
+        margin-top: .5rem;
+        text-transform: uppercase;
+    }
+
+    .dorso p{
+        line-height: .6rem;
+    }
+
+    .dorso p small{
+        font-size: .6rem;
+       
+        
+    }
+
+    .qr{
+        width: 45%;
+    }
+
+    .qr img{
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-dgt-v{
+        width: 40%;
+        margin-left: 5%;
+    }
+    .logo-dgt-v img{
+        width: 100%;
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    .firma{
+        padding-top: 2rem;
+        text-align: center;
+    }
+</style>
+<body>
+
+    <div class="credencial-container">
+        <div class="credencial frente">        
+                <div class="d-flex">
+                    <div class="profile-image">
+                        <img src="assets/images/profile.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <ul class="list-datos">
+                            <li>
+                                <small>Apellido</small>
+                                <h5>González Sanchez</h5>
+                            </li>
+                            <li>
+                                <small>Nombre</small>
+                                <h5>Hector Ricardo</h5>
+                            </li>
+                            <li>
+                                <small>Documento</small>
+                                <h5>DNI 302597855</h5>
+                            </li>
+                            <li>
+                                <small>Otorgamiento</small>
+
+                                <h5><span>02/01/2021</span> <strong class="vto bold text-danger">Vto: 31/01/2021</strong> </h5>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="numero-carnet">
+                    <h5><span>Carnet:</span>  #1598746 </h5>
+                </div>
+                <div class="footer">
+                    <img class="logo-dgt" src="assets/images/logo-horizontal.svg" alt="">
+                    <img class="logo-gob" src="assets/images/logo-gobierno.svg" alt="">
+                </div>       
+        </div>
+        <div class="credencial dorso"> 
+                <div class="header">
+                    <h2>Carnet ofical <strong>2021</strong></h2>
+                </div>
+                <div class="d-flex">
+                    <div class="col">
+                        <h6>Organismo</h6>
+                        <h4>Policia de la Provincia de Santiago del Estero</h4>
+                        <div class="d-flex">
+                            <div class="qr">
+                                <img src="assets/images/qr.png" alt="">
+                            </div>
+                            <div class="logo-dgt-v">
+                                <img src="assets/images/logo-vertical.svg" alt="">
+                            </div>                       
+                        
+                        </div>
+                    </div>
+                    <div class="col-b">
+                    <p><small>Esta credencial solo acredita la entidad del conductor de vehículos oficiales y debe ser acompañada con la licencia de conducir correspondiente a la categoría del vehículo que conduce.Caso contrario carece de valor.</small></p>
+                    <div class="firma">
+                        <hr>
+                        <p><small>Director de Transporte <br> Santiago del Estero</small></p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+</body>
+</html>
