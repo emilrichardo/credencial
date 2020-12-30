@@ -17,6 +17,9 @@
         -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
         color-adjust: exact !important;                 /*Firefox*/
     }
+    img{
+        height: auto;
+    }
 
     .credencial-container{
         display: flex;
@@ -26,7 +29,7 @@
         height: 600px; */
         width: 288px;
         height: 186px;
-        background: url("assets/images/background.svg") no-repeat 100%;
+       
         background-position: top right;
         padding: 1rem 1rem;
         
@@ -41,9 +44,9 @@
     }
 
 
-    .d-flex{
+   /*  .d-flex{
         display: flex;
-    }
+    } */
     .bold{
         font-weight: bold;
     }
@@ -53,13 +56,21 @@
 
     .profile-image{
         width: 35%;
-        max-height: 78px;
+        height: 90px;
         overflow: hidden;
         border-radius: 5px;
+        display: inline-block;
+        float: left;
     }
     .profile-image img{
         width: 100%;
         height: auto;
+    }
+
+    .text{
+        display: inline-block;
+        float: left;
+        width: 65%;
     }
 
     .list-datos{
@@ -75,7 +86,8 @@
     .list-datos small{
         font-size: 0.6rem;
         text-transform: uppercase;
-        letter-spacing: 0.1rem;
+        letter-spacing: 2px;
+        font-weight: bold;
     }
     .list-datos li h5{
         margin: 0;
@@ -88,11 +100,11 @@
     }
 
     .footer{
-        display: flex;
-        justify-content: space-between;
+       
         align-items: center;
         border-top: 1px solid #ccc;
         padding-top: .3rem;
+        clear: both;
     }
 
     .logo-dgt{
@@ -101,6 +113,8 @@
 
     .logo-gob{
         max-width: 30%;
+        float: right;
+        margin-top: 1rem;
     }
 
     .numero-carnet{
@@ -132,10 +146,13 @@
     .col{
         width: 60%;
         display: inline-block;
+        float: left;
+        
     }
     .col-b{
         width: 35%;
         display: inline-block;
+        float: left;
         margin-left: 5%;
     }
 
@@ -160,6 +177,8 @@
 
     .qr{
         width: 45%;
+        float: left;
+        display: inline-block;
     }
 
     .qr img{
@@ -170,11 +189,14 @@
     .logo-dgt-v{
         width: 40%;
         margin-left: 5%;
+        float: left;
+        display: inline-block;
     }
     .logo-dgt-v img{
         width: 100%;
         display: inline-block;
         margin-top: 1rem;
+        
     }
 
     .firma{
@@ -185,7 +207,7 @@
 <body>
 
     <div class="credencial-container">
-        <div class="credencial frente">        
+        <div class="credencial frente" background="/assets/images/background.svg" >        
                 <div class="d-flex">
                     <div class="profile-image">
                         <img src="assets/images/profile.jpg" alt="">
